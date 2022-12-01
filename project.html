@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<link rel="icon" href="assets/img/star.png">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+  
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.12/css/all.css'>
+<link rel="stylesheet" href="assets/scss/style.css">
+
+        <title>Xiaoyu Hu</title>
+    </head>
+    <body onLoad="loadImages()">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a style= "font-size: 30px;" href="#" class="nav__logo">🪐</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="project.html" class="nav__link">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+<!--===== HOME =====-->
+
+<section class="gallery" style="background: linear-gradient(to bottom, #000000 0%, #001741 100%);">
+  <div class="container">
+    <div class="grid">
+     
+      <div class="column-xs-12 column-md-4" style="padding-top: 100px">
+        <figure class="img-container">
+          <a href="HiccupStopper.html"> <img src="assets/img/HiccupStopperpng.png" /></a>
+          
+          <figcaption class="img-content">
+            <h2 class="title">HiccupStopper</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">HiccupStopper</h2>
+            <h3 class="category"> A helper invention for stopping users hiccupping when they are alone.</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-4"style="padding-top: 100px">
+        <figure class="img-container">
+          <a href="neglectedRights.html"> <img src="assets/img/Negelected rights.png" /></a>
+          
+          <figcaption class="img-content">
+            <h2 class="title">Negelected rights</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Wasting Rights</h2>
+            <h3 class="category">An interactive installation that intends to help users be aware of they are wasting rights through “Fruit Ninja” Game machenism. </h3>
+          </span>
+        </figure>
+      </div>
+
+         <div class="column-xs-12 column-md-4"style="padding-top: 100px">
+        <figure class="img-container">
+          <a href="car.html">  <img src="assets/img/Conversational assistant.png" /></a>
+         
+          <figcaption class="img-content">
+            <h2 class="title">Design In-car Affective Conversational Agent</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Design In-car Affective Conversational Agent</h2>
+            <h3 class="category">we analyze the current in-car conversational agents and give the solutions to overcome the existing limitations.</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12">
+        <figure class="img-container">
+          <a href="3dmodel.html"> <img src="assets/img/hand.gif"/></a>
+          
+          <figcaption class="img-content">
+            <h2 class="title">3D works</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">3D works</h2>
+            <h3 class="category">My 3d model making.</h3>
+          </span>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+        
+        </main>
+        <script type="text/javascript">
+            const imgContent = document.querySelectorAll('.img-content-hover');
+
+function showImgContent(e) {
+  for(var i = 0; i < imgContent.length; i++) {
+    x = e.pageX;
+    y = e.pageY;
+    imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }
+};
+
+document.addEventListener('mousemove', showImgContent);
+        </script>
+
+        <!--===== GSAP =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

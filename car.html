@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<link rel="icon" href="assets/img/bb.png">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.12/css/all.css'>
+<link rel="stylesheet" href="assets/scss/style.css">
+
+        <title>Xiaoyu Hu</title>
+    </head>
+    <body style="background: linear-gradient(to bottom, #000000 0%, #001741 100%); color: white;">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a style= "font-size: 30px;" href="#" class="nav__logo">🪐</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                          <li class="nav__item"><a href="index.html" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="project.html" class="nav__link">Projects</a></li>
+               
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+
+
+<section class="gallery">
+  <div class="container">
+    <div class="grid">
+
+      <div style = "padding-top: 11rem; padding-left:5rem;"class="column-xs-12 column-md-12">
+        <h2 style="font-size: 36px; font-family: 'Josefin Sans', sans-serif;">Design In-car Affective Conversational Agent</h2>
+
+        </br>
+        <p style="font-size: 18px; font-family: 'Josefin Sans', sans-serif; font-weight: lighter;"> 
+           In-car conversational agents become ubiquitous with the rapid development of the conversational AI. Still, the current usage scenarios of in-car conversational agents show that they just serve as “audio switches” for basic tasks. How can design reveal the ability of the conversational AI, and become a “Good helper” for driver?
+        </p><br>
+        <div class="tag" >User Study</div>
+        <div class="tag" >Affective Design</div>
+        <div class="tag" >Interaction Design</div>
+   
+      </div>
+  </div>
+</div>
+
+  <div class="container">
+    <div class="grid">
+   
+      <div style = "padding-top:5rem; padding-left: 5rem;" class="column-xs-12 column-md-12">
+          <h2 style="font-size: 26px; font-family: 'Josefin Sans', sans-serif;">Design Goal</h2>
+          <br>
+           
+           <h2 style="font-size: 18px; font-family: 'Josefin Sans', sans-serif; font-weight: lighter"><p>As the goal In-vehicle voice is not far from our lives. Nowadays, modern cars are basically equipped with in-car conversational agents. Since both hands and vision are occupied when driving, voice control can play a good role in driving. The current in-car conversational agent is relatively complete for basic functions: media, telephone, entertainment, Eastern Airlines system control, system query and so on. However, some problems existed: for example, the dialogue form is relatively rigid and the interaction is not natural enough. These problems make users need to have a certain understanding in advance to use the in-vehicle voice without obstacles. Therefore, this research aims to explore a more intelligent and natural way of interacting with the in-vehicle voice system in specific situations. Specifically, we <b>analyze the current in-car conversational agents and <b>give the solutions to overcome the existing limitations</b>.
+  <br></br>
+         
+</h2>
+
+      </div>
+           
+  </div>
+</div>
+
+
+<div class="container">
+    <div class="grid">
+   
+      <div style = "padding-top:5rem; padding-left: 5rem;" class="column-xs-12 column-md-12">
+          <h2 style="font-size: 26px; font-family: 'Josefin Sans', sans-serif;">Case Study</h2>
+          <br>
+          <img style = "width: 100%; height: 30%; padding-top:2rem;"src="assets/img/car1.png"/>
+    
+          <img style = "width: 100%; height: 30%;padding-top:2rem;"src="assets/img/car3.png"/>
+                <img style = "width: 100%; height:33%;padding-top:2rem;"src="assets/img/car2.png"/>
+      </div>
+           
+  </div>
+</div>
+
+
+ <div class="container">
+    <div class="grid">
+       <div style = "padding-left:5rem;"class="column-xs-12 column-md-12">
+   <h2 style="font-size: 26px; font-family: 'Josefin Sans', sans-serif;">Demo</h2>
+
+    
+ </div>
+
+     <div style = "padding-top: 1rem; padding-left:4rem;"class="column-xs-12 column-md-12">
+        <video width=100% controls>
+            <source src="assets/img/AssistantDemo.mp4" type="video/mp4">
+        </video>  
+  </div>
+    
+  </div>
+
+</div>
+
+
+     
+     
+     
+</section>
+        
+        </main>
+
+
+        <!--===== GSAP =====-->
+        <script>
+  $(window).on( 'resize', function () {
+    $('.halfwidth').height( $(window).width() / 2.7);
+}).resize();
+</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
